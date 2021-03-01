@@ -4,31 +4,37 @@ import {Parallax} from 'react-parallax'
 //components
 import Background from '../components/Background'
 import Skills from '../components/Skills'
+import ScrollToLink from '../components/ScrollToLink'
 
 const Main = ({tch}) => {
 
     const skillsData = [
         {
+            id : 0,
             name : "Html",
             image : {url: "/images/skills-icons/html5-brands.svg"},
             skill_proficiency : {name:"High"}
         },
         {
+            id : 1,
             name : "Css",
             image : {url: "/images/skills-icons/css3-brands.svg"},
             skill_proficiency : {name:"High"}
         },
         {
+            id : 2,
             name : "Javascript",
             image : {url: "/images/skills-icons/js-brands.svg"},
             skill_proficiency : {name:"Medium"}
         },
         {
+            id : 3,
             name : "React Js",
             image : {url: "/images/skills-icons/react-brands.svg"},
             skill_proficiency : {name:"Medium"}
         },
         {
+            id : 4,
             name : "Vue Js",
             image : {url: "/images/skills-icons/vuejs-brands.svg"},
             skill_proficiency : {name:"Low"}
@@ -90,6 +96,8 @@ const Main = ({tch}) => {
                 <Skills skills_data={skillsData}/>
                 
                 <Parallax className="section-break" bgImage={process.env.PUBLIC_URL + bgGet()} strength={500}/>
+
+                <ScrollToLink page="Projects" link="./projects"/>
             </section>
         </main>
     )

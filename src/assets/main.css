@@ -511,6 +511,110 @@ header .nav-header.active .nav-wrapper a:last-child {
   font: 26px/30px "Raleway", sans-serif;
 }
 
+.projects-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1366px;
+  margin: 120px auto 98px;
+  padding: 72px 32px 22px;
+  border-radius: 10px;
+}
+
+.projects-wrapper .projects-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 42px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects-wrapper .projects-list .single-project {
+  width: 25%;
+  margin-bottom: 42px;
+  padding-right: 16px;
+}
+
+.projects-wrapper .projects-list .single-project:nth-child(4n) {
+  padding-right: 0 !important;
+}
+
+.projects-wrapper .projects-list .single-project .inner {
+  background: white;
+  border-radius: 8px;
+  color: #333;
+  padding: 24px 0 0;
+  overflow: hidden;
+}
+
+.projects-wrapper .projects-list .single-project .inner .tags-group {
+  width: 100%;
+  padding: 0 12px;
+}
+
+.projects-wrapper .projects-list .single-project .inner .proj-feat-img {
+  width: 100%;
+  height: 150px;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+}
+
+.projects-wrapper .projects-list .single-project .inner .info {
+  width: 100%;
+  padding: 12px;
+}
+
+.projects-wrapper .projects-list .single-project .inner .info p {
+  font: 16px/20px "Source Sans Pro", sans-serif;
+}
+
+.projects-wrapper .projects-list .single-project .inner .btns-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects-wrapper .projects-list .single-project .inner .btns-wrapper a {
+  display: block;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-wrapper .projects-list .single-project .inner .btns-wrapper a svg {
+  margin-left: 5px;
+}
+
+.projects-wrapper .projects-list .single-project .inner .btns-wrapper a:first-child {
+  border-right: 1px solid white;
+  background: yellowgreen;
+  color: white;
+}
+
+.projects-wrapper .projects-list .single-project .inner .btns-wrapper a:last-child {
+  border-left: 1px solid white;
+  background: #0077B5;
+  color: white;
+}
+
 @-webkit-keyframes popNotifTop {
   0% {
     -webkit-transform: translateY(-10px);
