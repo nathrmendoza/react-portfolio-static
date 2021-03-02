@@ -1,102 +1,109 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Parallax} from 'react-parallax'
-import ProjectsList from '../components/Project-Components/ProjectsList'
 
+import {projectsStatic, tagsStatic} from '../Stuff'
+import ProjectsList from '../components/Project-Components/ProjectsList'
+import FilterList from '../components/PFilter/FilterList'
 
 const Projects = () => {
     let tch = new Date().getHours();
-    const projectsData = [
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
-        },
-        {
-            id: 0,
-            name: "Test Project",
-            desc: "Lorem ipsum Description.",
-            code_link : "#",
-            site_link : "#",
-            media : [{url: "images/projects/usashopper.png", alt: "test"}],
-            tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
+    //projects values
+    const [projectsData, setProjects] = useState(projectsStatic);
+    //tags values
+    const [tagsData, setTags] = useState(tagsStatic);
+
+    //already filtered values
+    const [filtered,setFiltered] = useState([]);
+
+    //filter queue
+    const [filterQue, setFQue] = useState([]);
+
+
+    //filter function
+    const filterProjects = tofilter => {
+        let newfilter = [];
+        let toQueue = filterQue;
+        let newtags = tagsData;
+
+        //reset filters
+        if (tofilter === "Reset") {
+            //resets all values
+            console.log("resets");
+            setFiltered([]);
+            setTags(tagsStatic);
+            setProjects(projectsStatic);
         }
-    ]
+
+        //do filter
+        else {
+            // first pass
+            if (filtered.length === 0) {
+                projectsData.map(proj => {
+                    return proj.tags.map(tag => {
+                        if (tag.name === tofilter.name) {
+                            newfilter.push(proj);
+                        }
+                        return tag;
+                    });
+                });
+                setFiltered(newfilter);
+            }
+            //if already passed
+            else {
+                if(tofilter.state === false) {
+                    filtered.map(proj => {
+                        return proj.tags.map(tag => {
+                            if (tag.name === tofilter.name){
+                                newfilter.push(proj);
+                            }
+                            return tag;
+                        })
+                    });
+                    toQueue.push(tofilter);
+                    setFQue(toQueue);
+                }
+                // if filter already triggered
+                else {
+                    toQueue.filter(filter => {
+                        return filter.name !== tofilter.name;
+                    });
+                    
+                    //reset filtered
+                    setFiltered(projectsStatic);
+
+                    toQueue.map(filter=>{
+                        return filtered.map(val =>{
+                            return val.tags.map(tag => {
+                                if (tag.name === filter.name) {
+                                    newfilter.push(val);
+                                }
+                                return tag;
+                            });
+                        });
+                    })
+
+                    setFQue(toQueue);
+                }
+                
+                //set values for filtered
+                setFiltered(newfilter);
+            }
+            
+            //set state of tag/filter
+            newtags.map(tag=>{
+                if(tag.name === tofilter.name) 
+                    tag.state = !tag.state;
+                return tag;
+            });
+            
+            setTags(newtags);
+            setProjects(newfilter);
+        }
+
+        
+    }
+
+
     
     //theme color for page
     const pageColor = () => {
@@ -125,6 +132,9 @@ const Projects = () => {
                 <section className="projects-wrapper" style={pageColor()}>
                     <h1>Projects!</h1>
                     <p>I've listed below some of the projects I've made throughout my career. Go ahead, take a gander.</p>
+                    {/* filters */}
+                    <FilterList tags={tagsData} doFilter={filterProjects}/>
+                    {/* projects list */}
                     <ProjectsList projects={projectsData}/>
                 </section>
             </Parallax>

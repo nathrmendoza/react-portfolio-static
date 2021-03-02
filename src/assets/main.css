@@ -518,6 +518,8 @@ header .nav-header.active .nav-wrapper a:last-child {
   margin: 120px auto 98px;
   padding: 72px 32px 22px;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .projects-wrapper .projects-list {
@@ -548,15 +550,29 @@ header .nav-header.active .nav-wrapper a:last-child {
 
 .projects-wrapper .projects-list .single-project .inner {
   background: white;
-  border-radius: 8px;
+  border-radius: 10px;
   color: #333;
-  padding: 24px 0 0;
+  padding: 12px 0 0;
   overflow: hidden;
 }
 
 .projects-wrapper .projects-list .single-project .inner .tags-group {
   width: 100%;
   padding: 0 12px;
+  margin-bottom: 12px;
+}
+
+.projects-wrapper .projects-list .single-project .inner .tags-group .tag {
+  padding: 4px 10px;
+  text-align: center;
+  color: white;
+  background: #3f3f3f;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.projects-wrapper .projects-list .single-project .inner .tags-group .tag:first-child {
+  margin-left: 0;
 }
 
 .projects-wrapper .projects-list .single-project .inner .proj-feat-img {
