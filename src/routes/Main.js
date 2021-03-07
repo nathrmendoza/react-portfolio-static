@@ -1,45 +1,19 @@
 import {Link} from 'react-router-dom';
 import {Parallax} from 'react-parallax'
+import {skillsStatic, projectsStatic} from '../Stuff'
 
 //components
 import Background from '../components/Background'
 import Skills from '../components/Skills'
 import ScrollToLink from '../components/ScrollToLink'
+import ProjectsList from '../components/Project-Components/ProjectsList'
 
 const Main = ({tch}) => {
 
-    const skillsData = [
-        {
-            id : 0,
-            name : "Html",
-            image : {url: "/images/skills-icons/html5-brands.svg"},
-            skill_proficiency : {name:"High"}
-        },
-        {
-            id : 1,
-            name : "Css",
-            image : {url: "/images/skills-icons/css3-brands.svg"},
-            skill_proficiency : {name:"High"}
-        },
-        {
-            id : 2,
-            name : "Javascript",
-            image : {url: "/images/skills-icons/js-brands.svg"},
-            skill_proficiency : {name:"Medium"}
-        },
-        {
-            id : 3,
-            name : "React Js",
-            image : {url: "/images/skills-icons/react-brands.svg"},
-            skill_proficiency : {name:"Medium"}
-        },
-        {
-            id : 4,
-            name : "Vue Js",
-            image : {url: "/images/skills-icons/vuejs-brands.svg"},
-            skill_proficiency : {name:"Low"}
-        }
-    ];
+    //skills values
+    const skillsData = skillsStatic;
+    //projects values
+    const projectsData = projectsStatic;
 
     //greeting
     const greetMessage = () => {
@@ -97,7 +71,14 @@ const Main = ({tch}) => {
                 
                 <Parallax className="section-break" bgImage={process.env.PUBLIC_URL + bgGet()} strength={500}/>
 
-                <ScrollToLink page="Projects" link="./projects"/>
+                <section className="projects-wrapper" style={pageColor()}>
+                    <h1>Projects!</h1>
+                    <p>I've listed below some of the projects I've made throughout my career. Go ahead, take a gander.</p>
+
+                    <ProjectsList projects={projectsData}/>
+                </section>
+                
+                <Parallax className="section-break" bgImage={process.env.PUBLIC_URL + bgGet()} strength={500}/>
             </section>
         </main>
     )
