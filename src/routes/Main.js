@@ -71,14 +71,13 @@ const Main = ({tch}) => {
                 
                 <Parallax className="section-break" bgImage={process.env.PUBLIC_URL + bgGet()} strength={500}/>
 
-                <section className="projects-wrapper" style={pageColor()}>
+                <div className="projects-wrapper" style={pageColor()}>
                     <h1>Projects!</h1>
                     <p>I've listed below some of the projects I've made throughout my career. Go ahead, take a gander.</p>
 
                     <ProjectsList projects={projectsData}/>
-                </section>
-                
-                <Parallax className="section-break" bgImage={process.env.PUBLIC_URL + bgGet()} strength={500}/>
+                </div>
+
             </section>
         </main>
     )

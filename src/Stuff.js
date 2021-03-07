@@ -1,22 +1,49 @@
 export const projectsStatic = [
     {
         id: 0,
-        name: "Test Project 1",
-        desc: "Lorem ipsum Description.",
-        code_link : "#",
-        site_link : "#",
-        media : [{url: "images/projects/usashopper.png", alt: "test"}],
-        tags : [{id: 0, name: "Personal"}, {id: 1, name: "Html"}]
+        name: "USA Shopper",
+        desc: "Very clean site with complex layouts, eg. How it works section.",
+        code_link : "",
+        site_link : "https://usashopper.ph",
+        media : [{url: "images/projects/usashopper.png", alt: "usa-shopper-featured"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}]
     },
     {
         id: 1,
-        name: "Test Project 2",
-        desc: "Lorem ipsum Description.",
-        code_link : "#",
-        site_link : "#",
-        media : [{url: "images/projects/usashopper.png", alt: "test"}],
-        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}]
-    }
+        name: "ISOC Holdings",
+        desc: "One of the first sites where I've applied animations on. Has a clean and user friendly design and layout.",
+        code_link : "",
+        site_link : "https://isocholdings.com",
+        media : [{url: "images/projects/isocholdings.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 3, name: "JQuery"}]
+    },
+    {
+        id: 2,
+        name: "Concrete Masters Inc.",
+        desc: "Started to improve my animations in this project. Also applied some complex features eg. the counter on banner",
+        code_link : "",
+        site_link : "https://concretemastersinc.com/",
+        media : [{url: "images/projects/concrete-masters.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 3, name: "JQuery"}]
+    },
+    {
+        id: 3,
+        name: "Sapporo Products",
+        desc: "One of the projects I've handled with complex layout/design.",
+        code_link : "",
+        site_link : "https://sapporoproducts.com/",
+        media : [{url: "images/projects/sapporo.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 3, name: "JQuery"}]
+    },
+    {
+        id: 4,
+        name: "Dynamic Brands International",
+        desc: "Very elegant and minimialistic design, was relatively simple to implement on code.",
+        code_link : "",
+        site_link : "https://dynamicbrandsinternational.com",
+        media : [{url: "images/projects/dynamic.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 3, name: "JQuery"}]
+    },
 ];
 
 export const tagsStatic = [

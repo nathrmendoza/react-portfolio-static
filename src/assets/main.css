@@ -548,8 +548,10 @@ header .nav-header.active .nav-wrapper a:last-child {
   background: white;
   border-radius: 10px;
   color: #333;
-  padding: 12px 0 0;
+  padding: 12px 0 42px;
   overflow: hidden;
+  height: 100%;
+  position: relative;
 }
 
 .projects-list .single-project .inner .tags-group {
@@ -592,6 +594,9 @@ header .nav-header.active .nav-wrapper a:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .projects-list .single-project .inner .btns-wrapper a {

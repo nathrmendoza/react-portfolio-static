@@ -172,7 +172,7 @@ header{width: 100%; position: absolute; top: 0; left: 0; z-index: 99; background
     
   .single-project{width: 25%; margin-bottom: 42px; padding-right: 16px;
     &:nth-child(4n) {padding-right: 0!important;}
-    .inner{ background: white; border-radius: 10px; color: #333; padding: 12px 0 0; overflow: hidden;
+    .inner{ background: white; border-radius: 10px; color: #333; padding: 12px 0 42px; overflow: hidden; height: 100%; position: relative;
       .tags-group{width: 100%; padding: 0 12px; margin-bottom: 12px;
         .tag {padding: 4px 10px; text-align: center; color: white; background: #3f3f3f; margin-left: 8px;
           font-size: 14px; &:first-child{margin-left: 0;}}
@@ -181,7 +181,7 @@ header{width: 100%; position: absolute; top: 0; left: 0; z-index: 99; background
       .info{width: 100%; padding: 12px;
         p{font: 16px/20px $fontmain;}
       }
-      .btns-wrapper {width: 100%; display: flex;
+      .btns-wrapper {width: 100%; display: flex; position: absolute; bottom: 0; left: 0;
         a{display: block; width: 50%; padding: 5px; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center;
           svg{margin-left: 5px;}
           &:first-child {border-right: 1px solid white; background: yellowgreen; color: white;}
