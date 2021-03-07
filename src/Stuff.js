@@ -37,3 +37,36 @@ export const tagsStatic = [
         state: false
     }
 ];
+
+export const skillsStatic = [
+    {
+        id : 0,
+        name : "Html",
+        image : {url: "/images/skills-icons/html5-brands.svg"},
+        skill_proficiency : {name:"High"}
+    },
+    {
+        id : 1,
+        name : "Css",
+        image : {url: "/images/skills-icons/css3-brands.svg"},
+        skill_proficiency : {name:"High"}
+    },
+    {
+        id : 2,
+        name : "Javascript",
+        image : {url: "/images/skills-icons/js-brands.svg"},
+        skill_proficiency : {name:"Medium"}
+    },
+    {
+        id : 3,
+        name : "React Js",
+        image : {url: "/images/skills-icons/react-brands.svg"},
+        skill_proficiency : {name:"Medium"}
+    },
+    {
+        id : 4,
+        name : "Vue Js",
+        image : {url: "/images/skills-icons/vuejs-brands.svg"},
+        skill_proficiency : {name:"Low"}
+    }
+];
