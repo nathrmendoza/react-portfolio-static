@@ -1,6 +1,6 @@
 //styles
 import './assets/main.css';
-
+import './assets/responsive.css';
 //routes
 import Main from './routes/Main';
 import Projects from './routes/Projects';

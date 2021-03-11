@@ -1,14 +1,31 @@
-import {Link} from 'react-router-dom';
 import {Parallax} from 'react-parallax'
 import {skillsStatic, projectsStatic} from '../Stuff'
+import {useEffect} from 'react'
 
 //components
 import Background from '../components/Background'
 import Skills from '../components/Skills'
-import ScrollToLink from '../components/ScrollToLink'
+import {ScrollToLink} from '../components/ScrollToLink'
 import ProjectsList from '../components/Project-Components/ProjectsList'
 
 const Main = ({tch}) => {
+    
+    useEffect(()=>{
+        if(window.innerWidth <= 500) {
+            window.addEventListener('scroll', scrollFunc);
+        }
+    });
+
+    var scrollFunc = e => {
+        e.preventDefault();
+        if(window.pageYOffset >= document.querySelector('.hero-start').clientHeight && !document.querySelector('header').classList.contains('changed')){
+            console.log('pass');
+            document.querySelector('header').classList.add('changed')
+        }else if (window.pageYOffset < document.querySelector('.hero-start').clientHeight && document.querySelector('header').classList.contains('changed')){
+            console.log('removed');
+            document.querySelector('header').classList.remove('changed')
+        }
+    }
 
     //skills values
     const skillsData = skillsStatic;
@@ -51,14 +68,14 @@ const Main = ({tch}) => {
         <main>
             <section className="hero-start">
 
-                <Parallax bgImage={bgGet()} strength={200}>
+                <Parallax bgImage={bgGet()} strength={200} className="hero-parallax">
                     <article className="hero-content">
                         <div className="hero-content-wrap">
                             <div className="pic-wrap"><img src={process.env.PUBLIC_URL + 'images/pic-of-me.jpg'} alt="test"/></div>
                             <h2>{greetMessage()}</h2>
-                            <h6>I'm Nath, A front-end web developer</h6>
+                            <h6>I'm Nath, A front-end web&nbsp;developer</h6>
                             <p>Heya, I see you're visiting my portfolio. Do check around this page to see the summary of who I am. Also, don't forget to check 
-                                out my <Link to="/projects">Projects</Link> page to see what I've accomplished through the length of my field.</p>
+                                out the projects section to see what I've accomplished through the length of my field. </p>
                         </div>
                     </article>
                 </Parallax>

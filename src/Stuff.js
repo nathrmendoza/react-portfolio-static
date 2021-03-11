@@ -15,7 +15,7 @@ export const projectsStatic = [
         code_link : "",
         site_link : "https://isocholdings.com",
         media : [{url: "images/projects/isocholdings.png", alt: "test"}],
-        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 3, name: "JQuery"}]
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ export const projectsStatic = [
         code_link : "",
         site_link : "https://concretemastersinc.com/",
         media : [{url: "images/projects/concrete-masters.png", alt: "test"}],
-        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 3, name: "JQuery"}]
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export const projectsStatic = [
         code_link : "",
         site_link : "https://sapporoproducts.com/",
         media : [{url: "images/projects/sapporo.png", alt: "test"}],
-        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 3, name: "JQuery"}]
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ export const projectsStatic = [
         code_link : "",
         site_link : "https://dynamicbrandsinternational.com",
         media : [{url: "images/projects/dynamic.png", alt: "test"}],
-        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 3, name: "JQuery"}]
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
 ];
 

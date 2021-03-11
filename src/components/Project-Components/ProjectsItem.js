@@ -6,15 +6,17 @@ const ProjectsItem = ({item}) => {
     return (
         <div className="single-project">
             <div className="inner">
-                <div className="tags-group">
-                    {item.tags.map(tag => {
-                        return <span className="tag" key={tag.id}>{tag.name}</span>
-                    })}
-                </div>
-                <aside style={{backgroundImage: `url(${window.location.origin + "/" + item.media[0].url}`}} className="proj-feat-img"/>
-                <div className="info">
-                    <h5>{item.name}</h5>
-                    <p>{item.desc}</p>
+                <div className="top-info">
+                    <div className="tags-group">
+                        {item.tags.map(tag => {
+                            return <div className="tag" key={tag.id}><span className="tag-inner">{tag.name}</span></div>
+                        })}
+                    </div>
+                    <aside style={{backgroundImage: `url(${window.location.origin + "/" + item.media[0].url}`}} className="proj-feat-img"/>
+                    <div className="info">
+                        <h5>{item.name}</h5>
+                        <p>{item.desc}</p>
+                    </div>
                 </div>
                 <div className="btns-wrapper">
                     <a href={item.code_link} target="_blank" rel="noreferrer">Code<BiCodeBlock /></a>
