@@ -19,8 +19,9 @@ const ProjectsItem = ({item}) => {
                     </div>
                 </div>
                 <div className="btns-wrapper">
-                    <a href={item.code_link} target="_blank" rel="noreferrer">Code<BiCodeBlock /></a>
-                    <a href={item.site_link} target="_blank" rel="noreferrer">Site<FaGlobeAmericas/></a>
+                    { item.code_link &&  <a href={item.code_link} target="_blank" rel="noreferrer" className={`${!item.site_link ? 'width100' : ''}`}>Code<BiCodeBlock /></a> }
+                    { item.site_link &&  <a href={item.site_link} target="_blank" rel="noreferrer" className={`${!item.code_link ? 'width100' : ''}`}>Site<FaGlobeAmericas/></a> }
+                    
                 </div>
             </div>
         </div>

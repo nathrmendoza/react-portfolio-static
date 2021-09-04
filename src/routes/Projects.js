@@ -132,7 +132,7 @@ const Projects = () => {
                 <section className="projects-wrapper" style={pageColor()}>
                     <h1>Projects!</h1>
                     <p>I've listed below some of the projects I've made throughout my career. Go ahead, take a gander. <br>
-                        <em>Side note: I've not included the code links for professional projects as this might break some security protocols.</em></br></p>
+                        <em>Side note: I've not included the code links for professional projects as this might break some terms.</em></br></p>
                     
                     <FilterList tags={tagsData} doFilter={filterProjects}/>
 

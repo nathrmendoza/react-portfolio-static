@@ -1,19 +1,17 @@
 import {Parallax} from 'react-parallax'
+// import {ScrollToLink} from '../components/ScrollToLink'
 import {skillsStatic, projectsStatic} from '../Stuff'
 import {useEffect} from 'react'
 
 //components
 import Background from '../components/Background'
 import Skills from '../components/Skills'
-import {ScrollToLink} from '../components/ScrollToLink'
 import ProjectsList from '../components/Project-Components/ProjectsList'
 
 const Main = ({tch}) => {
     
     useEffect(()=>{
-        if(window.innerWidth <= 500) {
-            window.addEventListener('scroll', scrollFunc);
-        }
+        window.addEventListener('scroll', scrollFunc);
     });
 
     var scrollFunc = e => {
@@ -90,7 +88,7 @@ const Main = ({tch}) => {
 
                 <div className="projects-wrapper" style={pageColor()}>
                     <h1>Projects!</h1>
-                    <p>I've listed below some of the projects I've made throughout my career. Go ahead, take a gander. <br/> <em><b>Side note:</b> I've not included the code links for professional projects as this might break some security protocols.</em></p>
+                    <p>I've listed below some of the projects I've made throughout my career. Go ahead, take a gander. <br/> <em><b>Side note:</b> I've not included the code links for professional projects as this might break some terms.</em></p>
 
                     <ProjectsList projects={projectsData}/>
                 </div>

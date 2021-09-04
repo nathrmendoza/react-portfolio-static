@@ -74,7 +74,7 @@ a{color: black; font-weight: 600;}
 //START
 //HEADER
 header{width: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: rgba(0,0,0,0.10); box-shadow: 0 0 10px rgba(0,0,0,0.10); padding: 8px 24px;
-  display: flex; align-items: center; justify-content: space-between; transition: all 200ms ease-in-out;
+  display: flex; align-items: center; justify-content: flex-end; transition: all 200ms ease-in-out;
   &.changed{background: rgba(50,50,50,1); box-shadow: 0 0 10px rgba(0,0,0,0.75);}
   #socials-header{display: flex; align-items: center; justify-content: flex-start;
     a{display: block; background: white; border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; margin-left: 8px;
@@ -197,6 +197,7 @@ header{width: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: r
       .btns-wrapper {width: 100%; display: flex; position: absolute; bottom: 0; left: 0; border-bottom-right-radius: 10px;
         a{display: block; width: 50%; padding: 5px; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center;
           transition: all 100ms ease-in-out;
+          &.width100{width: 100%!important; border: none!important;}
           svg{margin-left: 5px;}
           &:first-child {border-right: 1px solid white; background: yellowgreen; color: white;
             &:hover{background: #7fa82c;}

@@ -12,13 +12,13 @@ const Header = ({tch}) => {
 
     return (
         <header>
-            <nav className="nav-header">
-                {/* <Navbar tch={tch}/>
+            {/* <nav className="nav-header">
+                <Navbar tch={tch}/>
                 <span className="burg" onClick={burgClick}>
                     <i></i><i></i><i></i>
                 </span>
-                <span className="notif">Click here to see more!</span> */}
-            </nav>
+                <span className="notif">Click here to see more!</span>
+            </nav> */}
             <div id="nath-title" style={{color: getColor()}}>Nath Mendo.</div>
             <Socials itu="socials-header"/>
         </header>
