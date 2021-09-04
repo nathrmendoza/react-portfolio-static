@@ -12,13 +12,13 @@ const Header = ({tch}) => {
 
     return (
         <header>
-            {/* <nav className="nav-header">
-                <Navbar tch={tch}/>
+            <nav className="nav-header">
+                <Navbar tch={tch} nav_func={navClick}/>
                 <span className="burg" onClick={burgClick}>
                     <i></i><i></i><i></i>
                 </span>
                 <span className="notif">Click here to see more!</span>
-            </nav> */}
+            </nav>
             <div id="nath-title" style={{color: getColor()}}>Nath Mendo.</div>
             <Socials itu="socials-header"/>
         </header>
@@ -28,7 +28,6 @@ const Header = ({tch}) => {
 //toggle nav
 const burgClick = e => {
     let notif = document.querySelector('.notif');
-    console.log(notif);
     e.preventDefault();
 
     if(!notif.classList.contains('inactive')) {
@@ -41,6 +40,14 @@ const burgClick = e => {
         e.target.parentElement.classList.remove('active');
     }
     
+}
+
+const navClick = (el) => {
+    let scrollto = document.querySelector(el);
+    let navheader = document.querySelector('.nav-header');
+
+    navheader.classList.remove('active');
+    scrollto.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
 }
 
 export default Header
