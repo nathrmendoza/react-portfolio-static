@@ -44,6 +44,60 @@ export const projectsStatic = [
         media : [{url: "images/projects/dynamic.png", alt: "test"}],
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
+    {
+        id: 5,
+        name: "Cuadro PH",
+        desc: "Very intuitive website. Most proud of what I did with the picture cropping and frame changing feature",
+        code_link : "",
+        site_link : "https://www.cuadroph.com/",
+        media : [{url: "images/projects/cuadro.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
+    },
+    {
+        id: 6,
+        name: "One to Tree",
+        desc: "Fairly simple site.",
+        code_link : "",
+        site_link : "https://onetotree.org/",
+        media : [{url: "images/projects/onetotree.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
+    },
+    {
+        id: 7,
+        name: "Sta. Lucia Land Inc.",
+        desc: "Revamped the look of sta lucia land's site. Pretty neat project.",
+        code_link : "",
+        site_link : "https://stalucialand.com.ph/",
+        media : [{url: "images/projects/stalucia.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
+    },
+    {
+        id: 8,
+        name: "AyalaLand Logistics Holdings Corp.",
+        desc: "Also did a revamp for AyalaLand. Fairly simple conversion.",
+        code_link : "",
+        site_link : "https://www.ayalalandlogistics.com/",
+        media : [{url: "images/projects/ayalaland.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
+    },
+    {
+        id: 9,
+        name: "Now for Next (Google India)",
+        desc: "One of the projects I did for Economist Group. Very neat clean UI.",
+        code_link : "",
+        site_link : "https://nowfornext.in/",
+        media : [{url: "images/projects/nowfornext.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
+    },
+    {
+        id: 10,
+        name: "Blood, Sweat and Dreams (Huawei)",
+        desc: "Also one of the projects I did with the Economist Group. Has some complex sections and animations.",
+        code_link : "",
+        site_link : "https://bloodsweatanddreams.economist.com/",
+        media : [{url: "images/projects/bloodsweatdreams.png", alt: "test"}],
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
+    },
 ];
 
 export const tagsStatic = [

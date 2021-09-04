@@ -89,6 +89,14 @@ p, a, span, label, button, li {
   font-weight: 400;
 }
 
+em {
+  font-style: italic;
+}
+
+b {
+  font-weight: 700;
+}
+
 a {
   color: black;
   font-weight: 600;
@@ -117,7 +125,7 @@ a {
 
 header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99;

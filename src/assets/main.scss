@@ -60,6 +60,8 @@ h4 {font: 32px/38px $fontheading; font-weight: 800;}
 h5 {font: 26px/32px $fontheading; font-weight: 800;}
 h6 {font: 24px/32px $fontheading; font-weight: 800;}
 p,a,span,label,button,li {font: 18px/32px $fontmain; font-weight: 400;}
+em{font-style: italic;}
+b{font-weight: 700;}
 a{color: black; font-weight: 600;}
 
 
@@ -71,7 +73,7 @@ a{color: black; font-weight: 600;}
 
 //START
 //HEADER
-header{width: 100%; position: absolute; top: 0; left: 0; z-index: 99; background: rgba(0,0,0,0.10); box-shadow: 0 0 10px rgba(0,0,0,0.10); padding: 8px 24px;
+header{width: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: rgba(0,0,0,0.10); box-shadow: 0 0 10px rgba(0,0,0,0.10); padding: 8px 24px;
   display: flex; align-items: center; justify-content: space-between; transition: all 200ms ease-in-out;
   &.changed{background: rgba(50,50,50,1); box-shadow: 0 0 10px rgba(0,0,0,0.75);}
   #socials-header{display: flex; align-items: center; justify-content: flex-start;

@@ -90,7 +90,7 @@ const Main = ({tch}) => {
 
                 <div className="projects-wrapper" style={pageColor()}>
                     <h1>Projects!</h1>
-                    <p>I've listed below some of the projects I've made throughout my career. Go ahead, take a gander.</p>
+                    <p>I've listed below some of the projects I've made throughout my career. Go ahead, take a gander. <br/> <em><b>Side note:</b> I've not included the code links for professional projects as this might break some security protocols.</em></p>
 
                     <ProjectsList projects={projectsData}/>
                 </div>
