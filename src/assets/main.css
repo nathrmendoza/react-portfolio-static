@@ -119,7 +119,7 @@ a {
 
 .section-break {
   width: 100%;
-  height: 200px;
+  height: 350px;
   display: block;
 }
 
@@ -147,9 +147,13 @@ header {
 }
 
 header.changed {
-  background: #323232;
+  background: rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+header.changed #nath-title {
+  color: white !important;
 }
 
 header #socials-header {
