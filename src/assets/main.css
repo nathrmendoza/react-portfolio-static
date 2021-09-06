@@ -531,13 +531,18 @@ header .nav-header.active .nav-wrapper a:last-child, header .nav-header.active .
   transition: all 200ms ease-in-out;
 }
 
-.sec-skills .skills-list .skill-item:hover {
-  background: rgba(0, 0, 0, 0.25);
+.sec-skills .skills-list .skill-item:hover .inner-skill-wrap {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .sec-skills .skills-list .skill-item .inner-skill-wrap {
   width: 100%;
   text-align: center;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .sec-skills .skills-list .skill-item .inner-skill-wrap img {
@@ -571,7 +576,7 @@ header .nav-header.active .nav-wrapper a:last-child, header .nav-header.active .
 
 .projects-wrapper {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 98px 36px 42px;
 }
@@ -598,7 +603,7 @@ header .nav-header.active .nav-wrapper a:last-child, header .nav-header.active .
 }
 
 .projects-list .single-project {
-  width: 25%;
+  width: 33.333%;
   margin-bottom: 42px;
   padding: 0 8px;
 }
@@ -660,8 +665,14 @@ header .nav-header.active .nav-wrapper a:last-child, header .nav-header.active .
   padding: 12px;
 }
 
+.projects-list .single-project .inner .info h5 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
 .projects-list .single-project .inner .info p {
   font: 16px/20px "Source Sans Pro", sans-serif;
+  text-align: center;
 }
 
 .projects-list .single-project .inner .top-info {

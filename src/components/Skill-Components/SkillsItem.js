@@ -5,8 +5,8 @@ const SkillsItem = ({skill}) => {
         <div className="skill-item">
             <div className="inner-skill-wrap">
                 <img src={process.env.PUBLIC_URL + skill.image.url} alt="test"/>
-                <span className="proficiency">{skill.skill_proficiency.name}</span>
                 <h3>{skill.name}</h3>
+                <span className="proficiency"><em>{skill.skill_proficiency.name}</em></span>
             </div>
         </div>
     )
