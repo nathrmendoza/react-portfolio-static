@@ -1,6 +1,15 @@
 export const projectsStatic = [
     {
         id: 0,
+        name: "Covid Tracker",
+        desc: "One of my personal react projects.",
+        code_link : "https://github.com/nathrmendoza/react-covid",
+        site_link : "https://naths-covid-tracker.netlify.app/",
+        media : [{url: "images/projects/cov_tracker.png", alt: ""}],
+        tags : [{id: 0, name: "Personal"}, {id: 1, name: "React"}, {id: 2, name: "REST"}, {id: 3, name: "Html"}, {id: 4, name: "Css"}, {id: 5, name: "Javascript ES6"}]
+    },
+    {
+        id: 1,
         name: "USA Shopper",
         desc: "Very clean site with complex layouts, eg. How it works section.",
         code_link : "",
@@ -9,7 +18,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}]
     },
     {
-        id: 1,
+        id: 2,
         name: "ISOC Holdings",
         desc: "One of the first sites where I've applied animations on. Has a clean and user friendly design and layout.",
         code_link : "",
@@ -18,7 +27,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 2,
+        id: 3,
         name: "Concrete Masters Inc.",
         desc: "Started to improve my animations in this project. Also applied some complex features eg. the counter on banner",
         code_link : "",
@@ -27,7 +36,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 3,
+        id: 4,
         name: "Sapporo Products",
         desc: "One of the projects I've handled with complex layout/design.",
         code_link : "",
@@ -36,7 +45,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 4,
+        id: 5,
         name: "Dynamic Brands International",
         desc: "Very elegant and minimialistic design, was relatively simple to implement on code.",
         code_link : "",
@@ -45,7 +54,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 5,
+        id: 6,
         name: "Cuadro PH",
         desc: "Very intuitive website. Most proud of what I did with the picture cropping and frame changing feature",
         code_link : "",
@@ -54,7 +63,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 6,
+        id: 7,
         name: "One to Tree",
         desc: "Fairly simple site.",
         code_link : "",
@@ -63,7 +72,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 7,
+        id: 8,
         name: "Sta. Lucia Land Inc.",
         desc: "Revamped the look of sta lucia land's site. Pretty neat project.",
         code_link : "",
@@ -72,7 +81,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 8,
+        id: 9,
         name: "AyalaLand Logistics Holdings Corp.",
         desc: "Also did a revamp for AyalaLand. Fairly simple conversion.",
         code_link : "",
@@ -81,7 +90,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 9,
+        id: 10,
         name: "Now for Next (Google India)",
         desc: "One of the projects I did for Economist Group. Very neat clean UI.",
         code_link : "",
@@ -90,7 +99,7 @@ export const projectsStatic = [
         tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
     },
     {
-        id: 10,
+        id: 11,
         name: "Blood, Sweat and Dreams (Huawei)",
         desc: "Also one of the projects I did with the Economist Group. Has some complex sections and animations.",
         code_link : "",
@@ -144,10 +153,10 @@ export const skillsStatic = [
         image : {url: "/images/skills-icons/react-brands.svg"},
         skill_proficiency : {name:"Medium"}
     },
-    {
-        id : 4,
-        name : "Vue Js",
-        image : {url: "/images/skills-icons/vuejs-brands.svg"},
-        skill_proficiency : {name:"Low"}
-    }
+    // {
+    //     id : 4,
+    //     name : "Vue Js",
+    //     image : {url: "/images/skills-icons/vuejs-brands.svg"},
+    //     skill_proficiency : {name:"Low"}
+    // }
 ];

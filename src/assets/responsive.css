@@ -39,7 +39,7 @@
     .hero-start .hero-content {padding: 60px 16px 0;}
     .hero-start .hero-content .hero-content-wrap {padding: 24px 12px 32px;}
 
-    .sec-skills .skills-list .skill-item{width: 33.333%; padding: 8px; margin-bottom: 24px;}
+    .sec-skills .skills-list .skill-item{width: 50%; padding: 8px; margin-bottom: 24px;}
     .sec-skills .skills-list .skill-item .inner-skill-wrap h3{font-size: 20px; line-height: 32px;}
 
     .projects-list .single-project{width: 100%;}

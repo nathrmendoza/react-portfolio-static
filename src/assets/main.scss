@@ -162,7 +162,7 @@ header{width: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: r
 .sec-skills {
   .inner-wrapper>h1{text-shadow: 5px 5px 0 rgba(0,0,0,0.5); margin-bottom: 24px;}
   .skills-list {width: 100%; display: flex; align-items: stretch; justify-content: flex-start; flex-wrap: wrap; padding: 42px 0;
-    .skill-item{width: 20%; padding:12px; margin-bottom: 56px; border-radius: 8px; overflow: hidden; transition: all 200ms ease-in-out;
+    .skill-item{width: 25%; padding:12px; margin-bottom: 56px; border-radius: 8px; overflow: hidden; transition: all 200ms ease-in-out;
       &:hover{.inner-skill-wrap{transform: scale(1.1);}}
       .inner-skill-wrap {width: 100%; text-align: center; transition: transform 0.3s ease;
         img{display: block; margin: 0 auto 10px; width: auto; height: 82px; opacity: 0.8; filter: invert(1); user-select: none;}
