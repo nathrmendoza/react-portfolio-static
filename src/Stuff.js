@@ -105,7 +105,7 @@ export const projectsStatic = [
         code_link : "",
         site_link : "https://nowfornext.in/",
         media : [{url: "images/projects/nowfornext.png", alt: "test"}],
-        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}, {id: 5, name: "Wordpress"}, {id: 6, name : 'Php'}]
     },
     {
         id: 12,
@@ -114,7 +114,7 @@ export const projectsStatic = [
         code_link : "",
         site_link : "https://bloodsweatanddreams.economist.com/",
         media : [{url: "images/projects/bloodsweatdreams.png", alt: "test"}],
-        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}]
+        tags : [{id: 0, name: "Professional"}, {id: 1, name: "Html"}, {id: 2, name: "Css"}, {id: 3, name: "Javascript"}, {id: 4, name: "JQuery"}, {id: 5, name: "Wordpress"}, {id: 6, name : 'Php'}]
     },
 ];
 
