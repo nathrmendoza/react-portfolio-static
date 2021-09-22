@@ -15,7 +15,7 @@ export const projectsStatic = [
         code_link : "https://github.com/nathrmendoza/react_sneak_shop",
         site_link : "https://naths-sneakshop.netlify.app/",
         media : [{url: "images/projects/sneak_banner.png", alt: ""}],
-        tags : [{id: 0, name: "Personal"}, {id: 1, name: "React"}, {id: 2, name: "REST"}, {id: 3, name: "Html"}, {id: 4, name: "Css"}, {id: 5, name: "Javascript ES6"}]
+        tags : [{id: 0, name: "Personal"}, {id: 1, name: "React"}, {id: 2, name: "Html"}, {id: 3, name: "Css"}, {id: 4, name: "Javascript ES6"}]
     },
     {
         id: 2,
